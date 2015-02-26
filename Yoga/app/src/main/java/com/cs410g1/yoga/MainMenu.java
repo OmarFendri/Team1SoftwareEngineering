@@ -1,9 +1,11 @@
 package com.cs410g1.yoga;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class MainMenu extends ActionBarActivity {
@@ -35,5 +37,11 @@ public class MainMenu extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void yogaStyleClicked(View view)
+    {
+        Intent i = new Intent(getApplicationContext(), OpenGLES20Activity.class);
+        startActivity(i);
     }
 }
