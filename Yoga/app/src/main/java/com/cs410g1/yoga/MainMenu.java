@@ -41,7 +41,7 @@ public class MainMenu extends ActionBarActivity {
 
     public void yogaStyleClicked(View view)
     {
-        Intent i = new Intent(getApplicationContext(), OpenGLES20Activity.class);
+        Intent i = new Intent(getApplicationContext(), LessonOneActivity.class);
         startActivity(i);
     }
 }

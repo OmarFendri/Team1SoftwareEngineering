@@ -17,8 +17,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".OpenGLES20Activity"
-            android:label="OpenGLES20Activity" >
+            android:name=".LessonOneActivity"
+            android:label="LessonOneActivity" >
         </activity>
     </application>
 
