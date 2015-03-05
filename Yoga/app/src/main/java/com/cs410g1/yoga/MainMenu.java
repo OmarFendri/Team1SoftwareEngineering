@@ -1,9 +1,13 @@
 package com.cs410g1.yoga;
 
+import android.support.v4.app.DialogFragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.CheckBox;
 
 
 public class MainMenu extends ActionBarActivity {
@@ -35,5 +39,37 @@ public class MainMenu extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void doPositiveClick() {
+
+        Settings.TOSAgreed = true;
+
+        CheckBox check = (CheckBox)findViewById(R.id.termsOfServiceCheck);
+
+        check.setChecked(true);
+
+    }
+
+    public void doNegativeClick() {
+
+        CheckBox check = (CheckBox)findViewById(R.id.termsOfServiceCheck);
+
+        check.setChecked(false);
+    }
+
+    public void TOSBoxClicked(View view) {
+
+        CheckBox check = (CheckBox) view;
+        if(check.isChecked())
+        {
+            check.setChecked(false);
+        }
+        else
+        {
+            check.setChecked(true);
+        }
+        DialogFragment dialog = TOSDialogFragment.newInstance(R.string.TOS_title);
+        dialog.show(getSupportFragmentManager(), "TOSDialog");
     }
 }
