@@ -44,24 +44,5 @@ public class TOSDialogFragment extends DialogFragment {
                    })
                    .setMessage(R.string.TOS_message)
                    .create();
-
-        /*return new AlertDialog.Builder(getActivity())
-                .setIcon(R.drawable.alert_dialog_icon)
-                .setTitle(title)
-                .setPositiveButton(R.string.alert_dialog_ok,
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int whichButton) {
-                                ((FragmentAlertDialog)getActivity()).doPositiveClick();
-                            }
-                        }
-                )
-                .setNegativeButton(R.string.alert_dialog_cancel,
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int whichButton) {
-                                ((FragmentAlertDialog)getActivity()).doNegativeClick();
-                            }
-                        }
-                )
-                .create();*/
     }
 }

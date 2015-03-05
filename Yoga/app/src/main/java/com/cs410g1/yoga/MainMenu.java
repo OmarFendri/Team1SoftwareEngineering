@@ -45,7 +45,7 @@ public class MainMenu extends ActionBarActivity {
 
         Settings.TOSAgreed = true;
 
-        CheckBox check = (CheckBox)findViewById(R.id.termsOfServiceCheck);
+        CheckBox check = (CheckBox)findViewById(R.id.TOS_check);
 
         check.setChecked(true);
 
@@ -53,7 +53,7 @@ public class MainMenu extends ActionBarActivity {
 
     public void doNegativeClick() {
 
-        CheckBox check = (CheckBox)findViewById(R.id.termsOfServiceCheck);
+        CheckBox check = (CheckBox)findViewById(R.id.TOS_check);
 
         check.setChecked(false);
     }
@@ -61,14 +61,7 @@ public class MainMenu extends ActionBarActivity {
     public void TOSBoxClicked(View view) {
 
         CheckBox check = (CheckBox) view;
-        if(check.isChecked())
-        {
-            check.setChecked(false);
-        }
-        else
-        {
-            check.setChecked(true);
-        }
+        check.setChecked(check.isChecked() ? false : true);
         DialogFragment dialog = TOSDialogFragment.newInstance(R.string.TOS_title);
         dialog.show(getSupportFragmentManager(), "TOSDialog");
     }
