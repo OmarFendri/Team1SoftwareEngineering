@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".select_style_menu"
+            android:label="@string/title_activity_select_style_menu" >
+        </activity>
     </application>
 
 </manifest>

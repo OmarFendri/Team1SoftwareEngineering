@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.cs410g1.yoga.select_style_menu"
+    android:background="@drawable/yogbg">
+
+    <TextView android:text="@string/SelectStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:typeface="monospace"
+        android:id="@+id/textView"
+        android:textSize="40sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AnusaraStyle"
+        android:id="@+id/AnusaraStyle"
+        android:textSize="25sp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="31dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AshtangaStyle"
+        android:id="@+id/AshtangaStyle"
+        android:layout_below="@+id/AnusaraStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/AnusaraStyle"
+        android:layout_alignEnd="@+id/AnusaraStyle"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BikramStyle"
+        android:id="@+id/BikramStyle"
+        android:layout_below="@+id/AshtangaStyle"
+        android:layout_alignRight="@+id/AshtangaStyle"
+        android:layout_alignEnd="@+id/AshtangaStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/HathaStyle"
+        android:id="@+id/HathaStyle"
+        android:layout_below="@+id/BikramStyle"
+        android:layout_alignRight="@+id/BikramStyle"
+        android:layout_alignEnd="@+id/BikramStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/HotYogaStyle"
+        android:id="@+id/HotYogaStyle"
+        android:layout_below="@+id/HathaStyle"
+        android:layout_alignRight="@+id/HathaStyle"
+        android:layout_alignEnd="@+id/HathaStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/IyengarStyle"
+        android:id="@+id/Iyengar"
+        android:layout_below="@+id/HotYogaStyle"
+        android:layout_alignRight="@+id/HotYogaStyle"
+        android:layout_alignEnd="@+id/HotYogaStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/RestorativeYogaStyle"
+        android:id="@+id/RestorativeYogaStyle"
+        android:layout_below="@+id/Iyengar"
+        android:layout_alignRight="@+id/Iyengar"
+        android:layout_alignEnd="@+id/Iyengar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/VinyasaStyle"
+        android:id="@+id/Vinyasa"
+        android:layout_below="@+id/RestorativeYogaStyle"
+        android:layout_alignRight="@+id/RestorativeYogaStyle"
+        android:layout_alignEnd="@+id/RestorativeYogaStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="25sp" />
+
+</RelativeLayout>
